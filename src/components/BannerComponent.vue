@@ -115,8 +115,8 @@
 
 @media only screen and (max-width: 767px) {
   .banner-container {
-    background-color: #e2e2e234 !important;
-    /* background: linear-gradient(122.83deg, #2a6751 20.19%, #448a43 99.92%); */
+    /* background-color: #75ad9d !important; */
+    background: linear-gradient(122.83deg, #2a6751 20.19%, #448a43 99.92%);
     height: 450px !important;
   }
   .texto-container img {

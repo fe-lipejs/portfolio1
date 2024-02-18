@@ -1,8 +1,9 @@
 <template>
   <div>
-    <BannerComponent/>
-    <AnimationLetters/>
-
+    <!-- <BannerComponent /> -->
+    <AboutMe/>
+    <AnimationContainer/>
+    <ContactForm/>
   </div>
 </template>
 
@@ -41,15 +42,19 @@
 
 <script>
 //import ButtonQuadrado from "../components/ButtonQuadrado.vue";
-import BannerComponent from "../components/BannerComponent.vue";
-import AnimationLetters from "../components/AnimationLetters.vue";
+// import BannerComponent from "../components/BannerComponent.vue";
+import AboutMe from "./AboutMe.vue";
+import AnimationContainer from './AnimationContainer.vue';
+import ContactForm from "./ContactForm.vue";
 
 export default {
   name: "HomeComponent",
   components: {
-   // ButtonQuadrado,
-    BannerComponent,
-    AnimationLetters,
-  },
+    // ButtonQuadrado,
+    // BannerComponent,
+    AboutMe,
+    ContactForm,
+    AnimationContainer
+},
 };
 </script>
