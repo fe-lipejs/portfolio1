@@ -73,7 +73,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 5vw;
-  font-size: ;
+  /* font-size: ; */
   line-height: 4vw;
   text-align: start;
 }
@@ -107,7 +107,7 @@
 }
 
 .sub-item1 {
-  background-color: #60cffe;
+  background-color: #7d60fe;
   grid-column: 1 / span 2;
   grid-row: 1;
   display: grid;

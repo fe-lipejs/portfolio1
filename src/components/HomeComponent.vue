@@ -2,6 +2,8 @@
   <div>
     <BannerComponent/>
     <BodyComponent/>
+    <SecBodyComponent/>
+    <ContactForm/>
   </div>
 </template>
 
@@ -47,6 +49,8 @@ img{
 //import ButtonQuadrado from "../components/ButtonQuadrado.vue";
 import BannerComponent from "../components/BannerComponent.vue";
 import BodyComponent from "../components/BodyComponent/BodyComponent.vue";
+import SecBodyComponent from "./BodyComponent/SecBodyComponent.vue";
+import ContactForm from './ContactForm.vue';
 // import AboutMe from "./AboutMe.vue";
 
 
@@ -56,8 +60,8 @@ export default {
     // ButtonQuadrado,
     BannerComponent,
     BodyComponent,
-    // AboutMe,
-    
+    SecBodyComponent,
+    ContactForm
 },
 };
 </script>
