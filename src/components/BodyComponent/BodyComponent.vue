@@ -3,8 +3,11 @@
     <!-- ----------------------------------------------- -->
     <div class="grid-container">
       <div class="item item1">
-        <div>PORT</div>
-        <div>FÓLIO</div>
+        <div class="item1-tornado">
+          <div>PORT<br />FOLIO</div>
+        </div>
+        <!-- <div>PORT</div>
+        <div>FÓLIO</div> -->
       </div>
       <div class="item item2">
         <div class="sub-item sub-item2-1">Sub Item 1</div>
@@ -49,27 +52,38 @@
 
 .item1 {
   font-family: Roboto, sans-serif;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #ffffc1; /* Amarelo */
+  background-color: #64f185;
   grid-column: 1;
   grid-row: 1;
 }
-.item1 div {
-  vertical-align: center;
+.item1-tornado {
+  width: 100%;
+  height: 723px;
+  /* ------------------------ */
+  background: url("../../assets/letters1/tornado.svg");
+  background-repeat: no-repeat;
+  background-size: 60vw 500px;
+  background-position: 0px 250px;
+  display: flex;
+  justify-content: center;
+}
+.item1-tornado div {
+  margin-top: 40px;
+  margin-left: 7vw;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  font-size: 60px;
-  line-height: 55px;
+  font-size: 5vw;
+  font-size: ;
+  line-height: 4vw;
   text-align: start;
 }
+
 
 .item2 {
   grid-column: 2;
   padding: 0;
-  grid-column:  2;
-  grid-row: 1 /span 2;
+  grid-column: 2;
+  grid-row: 1 / span 2;
   display: grid;
   grid-template-rows: 723px 723px;
   background: url("../../../public/zendaya.jpg");
@@ -77,8 +91,6 @@
   background-size: cover;
   background-position: -350px 0;
 }
-
-
 
 .item3 {
   grid-column: 1;
@@ -121,7 +133,6 @@
 
 .item2 .sub-item1 {
 }
-
 
 .sub-item2 {
   background-color: #ffffc1;
@@ -175,7 +186,6 @@
     height: 100%;
   }
   .sub-item2 {
-    
     grid-column: 1;
     grid-row: 2;
   }
