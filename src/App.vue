@@ -21,6 +21,7 @@ export default {
 <style>
 @import "~typeface-roboto";
 * {
+  font-family: Roboto, sans-serif;
   padding: 0;
   margin: 0;
 }

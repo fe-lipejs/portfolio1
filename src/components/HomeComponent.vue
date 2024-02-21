@@ -1,13 +1,16 @@
 <template>
   <div>
-    <!-- <BannerComponent /> -->
-    <AboutMe/>
-    <AnimationContainer/>
-    <ContactForm/>
+    <BannerComponent/>
+    <BodyComponent/>
   </div>
 </template>
 
 <style scoped>
+img{
+  filter: blur(5px) grayscale(00%) contrast(00%);
+    transform: rotate(5deg) scale(01.2);
+
+}
 .banner-container {
   display: flex;
   flex-direction: column;
@@ -42,19 +45,19 @@
 
 <script>
 //import ButtonQuadrado from "../components/ButtonQuadrado.vue";
-// import BannerComponent from "../components/BannerComponent.vue";
-import AboutMe from "./AboutMe.vue";
-import AnimationContainer from './AnimationContainer.vue';
-import ContactForm from "./ContactForm.vue";
+import BannerComponent from "../components/BannerComponent.vue";
+import BodyComponent from "../components/BodyComponent/BodyComponent.vue";
+// import AboutMe from "./AboutMe.vue";
+
 
 export default {
   name: "HomeComponent",
   components: {
     // ButtonQuadrado,
-    // BannerComponent,
-    AboutMe,
-    ContactForm,
-    AnimationContainer
+    BannerComponent,
+    BodyComponent,
+    // AboutMe,
+    
 },
 };
 </script>

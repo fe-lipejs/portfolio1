@@ -1,5 +1,10 @@
 <template>
-  <div class="aboutme-container" ref="aboutmeContainer" @mousemove="moveCircleWithMouse" @touchmove="moveCircleWithTouch">
+  <div
+    class="aboutme-container"
+    ref="aboutmeContainer"
+    @mousemove="moveCircleWithMouse"
+    @touchmove="moveCircleWithTouch"
+  >
     <div class="circle" ref="circle"></div>
 
     <div class="container">
@@ -32,7 +37,6 @@
 </template>
 
 <style scoped>
-
 .aboutme-container {
   display: none;
   display: flex;
@@ -41,13 +45,19 @@
   width: 100%;
   background-color: #090909;
   /* background-color: red; */
+
+  background: linear-gradient(
+    138.76deg,
+    #0e0e0e 67.16%,
+    rgba(25, 62, 28, 0.91) 178.94%
+  );
 }
 .circle {
   position: absolute;
   border-radius: 100%;
   width: 500px;
   height: 500px;
-  border: 3px solid #5ec6671b;
+  border: 1px solid #5ec6671b;
   z-index: 8;
 }
 .container {
@@ -112,6 +122,12 @@
   font-size: 14px;
   font-weight: bolder;
 }
+@media only screen and (max-width: 767px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
 </style>
 
 
@@ -141,10 +157,10 @@ export default {
       circle.style.top = `${randomY}px`;
 
       // Animação para suavizar o movimento
-      circle.style.transition = 'left 2s ease-in-out, top 2s ease-in-out';
-    }
-  }
-}
+      circle.style.transition = "left 2s ease-in-out, top 2s ease-in-out";
+    },
+  },
+};
 </script>
 
 
